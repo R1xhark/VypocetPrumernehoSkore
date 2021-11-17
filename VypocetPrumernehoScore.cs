@@ -29,7 +29,7 @@ namespace VypocitPrumerneScore
                     Console.WriteLine("Zadej skore");
                     int input =Convert.ToInt32(Console.ReadLine());
                     // Maximalni skore je 20, pokud je cislo vetsi jak 20, nebo zaporna hodnota neprida se 
-                    if (input > 0&&input<(maxScore+1)) { 
+                    if (input > 0&&input<(maxScore+1)&&input!=null) { 
                         Console.WriteLine("Zadane skore {0}", input);
                     score = score + input;
                     pocetstudentu++;
